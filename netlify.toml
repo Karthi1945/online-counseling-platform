@@ -1,0 +1,13 @@
+[build]
+  command = "cd client && npm run build"
+  publish = "client/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[env.production]
+  [env.production.context.production.environment]
+    VITE_API_URL = "your_backend_url_here"
+    VITE_SOCKET_URL = "your_backend_url_here"
