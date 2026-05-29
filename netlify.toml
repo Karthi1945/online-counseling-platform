@@ -9,12 +9,12 @@
 
 [env.production]
   [env.production.context.production.environment]
-    VITE_API_URL = "your_backend_url_here"
-    VITE_SOCKET_URL = "your_backend_url_here"
+    VITE_API_URL = "https://online-counseling-platform-w4tj.onrender.com/"
+    VITE_SOCKET_URL = "https://online-counseling-platform-w4tj.onrender.com/"
 
   [build]
   base = "client"
-  command = "npm ci && npm run build"
+  command = "npm run build"
   publish = "dist"
 
   [build]
