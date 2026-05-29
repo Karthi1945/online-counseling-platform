@@ -1,6 +1,11 @@
 [build]
   command = "cd client && npm run build"
   publish = "client/dist"
+  base = "client"
+  command = "npm ci && npm run build"
+  publish = "dist"
+    publish = "dist"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
@@ -11,13 +16,4 @@
   [env.production.context.production.environment]
     VITE_API_URL = "https://online-counseling-platform-w4tj.onrender.com/"
     VITE_SOCKET_URL = "https://online-counseling-platform-w4tj.onrender.com/"
-
-  [build]
-  base = "client"
-  command = "npm run build"
-  publish = "dist"
-
-  [build]
-  publish = "dist"
-  command = "npm run build"
 
