@@ -17,3 +17,7 @@
   command = "npm ci && npm run build"
   publish = "dist"
 
+  [build]
+  publish = "dist"
+  command = "npm run build"
+
