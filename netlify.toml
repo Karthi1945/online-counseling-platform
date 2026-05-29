@@ -11,3 +11,9 @@
   [env.production.context.production.environment]
     VITE_API_URL = "your_backend_url_here"
     VITE_SOCKET_URL = "your_backend_url_here"
+
+  [build]
+  base = "client"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
